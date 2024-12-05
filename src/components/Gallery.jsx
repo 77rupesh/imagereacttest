@@ -21,11 +21,12 @@ const Gallery = () => {
   return (
     <div>
       <h1>Gallery</h1>
-      <div>
+          
         {images.map(image => (
           <img key={image.id} src={image.download_url} alt={image.author} />
         ))}
-      </div>
+      
+          
       <button onClick={getImages}>Fetch Images</button>
     </div>
   );
